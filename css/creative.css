@@ -169,7 +169,7 @@ header {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: linear-gradient(rgba(103, 150, 147, 0.75), rgba(103, 150, 147, 0.75)), url('../img/header.jpeg');
+  background-image: linear-gradient(rgba(103, 150, 147, 0.75), rgba(103, 150, 147, 0.75)), url('../img/header-min.jpg');
   text-align: center;
   color: white;
 }
