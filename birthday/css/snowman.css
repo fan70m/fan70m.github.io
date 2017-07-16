@@ -1,0 +1,175 @@
+#snowman {
+  width: 35vmin;
+  height: 60vmin;
+  position: absolute;
+  top: -25%; 
+  z-index: 0;
+  left: -35%;
+} 
+
+.bottom-round {
+ height: 55%;
+ width: 100%;
+ top: -17%; 
+ border-radius: 100%;
+ background: #f9feff;
+}
+
+.middle-round {
+ height: 35%;
+ width: 70%;
+ top: -2%; 
+ left: 15%;
+ border-radius: 100%;
+ background: #f9feff;
+}
+
+.top-round {
+ height: 28%;
+ width: 50%;
+ top: 3%; 
+ left: 25%;
+ border-radius: 100%;
+ background: #f9feff;
+}
+
+.left-hand {
+ height: 3%;
+ width: 50%;
+ background: brown;
+ z-index: -1;
+ top: -85%;
+ left: -30%;
+ -webkit-transform: rotate(45deg);
+ -moz-transform: rotate(45deg);
+ -o-transform: rotate(45deg);
+ -ms-transform: rotate(45deg);
+ transform: rotate(45deg);
+ -webkit-animation: left-hand 12s both infinite;
+ animation: left-hand 12s both infinite;
+ -webkit-transform-origin: bottom right;
+ border-bottom-left-radius: 2vmin;
+ border-top-left-radius: 2vmin; 
+
+}
+
+.right-hand {
+ height: 3%;
+ width: 50%;
+ background: brown;
+ z-index: -1;
+ top: -83%;
+ left: 75%;
+ -webkit-transform: rotate(-45deg);
+ -moz-transform: rotate(-45deg);
+ -o-transform: rotate(-45deg);
+ -ms-transform: rotate(-45deg);
+ transform: rotate(-45deg);
+ animation: right-hand 12s both infinite;
+ -webkit-transform-origin: bottom left;
+ border-bottom-right-radius: 2vmin;
+ border-top-right-radius: 2vmin; 
+}
+
+.button {
+ height: 25%;
+ width: 5%;
+ top: -91%;
+ left: 47%;
+ z-index: 9;
+}
+
+.button-up {
+ height: 10%;
+ width: 100%;
+ z-index: 11;
+ background: #666666;
+ border-radius: 99%;
+}
+
+.button-down {
+ height: 10%;
+ width: 100%;
+ top: 25%;
+ z-index: 11;
+ background: #666666;
+ border-radius: 99%;
+}
+
+.snowman-eye {
+ height: 3%;
+ width: 55%;
+ top: -138%;
+ left: 36%;
+ z-index: 9;
+
+}
+.snowman-eye-left{
+ height: 100%;
+ width: 10%;
+ background: #323232;
+ border-radius: 100%;
+ display: inline-block;
+}
+.snowman-eye-right{
+ height: 100%;
+ width: 10%;
+ left: 25%;
+ background: #323232;
+ border-radius: 100%;
+ display: inline-block
+}
+
+.snowman-nose{
+ width: 0;
+ height: 0;
+ top: -135%;
+ left: 48%;
+ border-top: 9px solid transparent;
+ border-left: 45px solid red;
+ border-bottom: 9px solid transparent;
+ border-top-left-radius: 2vmin;
+ border-bottom-left-radius: 2vmin;
+ -webkit-transform: rotate(8deg);
+ -moz-transform: rotate(8deg);
+ -o-transform: rotate(8deg);
+ -ms-transform: rotate(8deg);
+ transform: rotate(8deg);
+
+}
+
+@keyframes left-hand {
+  0% {
+    -webkit-transform: rotate(25deg);
+    transform: rotate(25deg);
+    animation-timing-function: ease-in;
+  }
+  25% {
+    -webkit-transform: rotate(70deg);
+    transform: rotate(70deg);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    -webkit-transform: rotate(25deg);
+    transform: rotate(25deg);
+    animation-timing-function: ease-in;
+  }
+  75% {
+    -webkit-transform: rotate(70deg);
+    transform: rotate(70deg);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: rotateZ(25deg);
+    transform: rotateZ(25deg);
+    animation-timing-function: ease-in;
+  }
+}
+
+@keyframes right-hand {
+  0% {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    animation-timing-function: ease-in;
+  }
+}
