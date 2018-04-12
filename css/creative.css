@@ -1,7 +1,7 @@
 /*
 Color Palette
 #a4cac8 Pale Turquoise
-#679693 rgb(103, 150, 147) Dark Turquoise 
+#679693 rgb(103, 150, 147) Dark Turquoise
 
 #d56f98 Dark Pink
 #c76675 pink hover
@@ -239,6 +239,7 @@ header .header-content .header-content-inner p {
   margin-bottom: 0;
 }
 #portfolio .portfolio-item {
+  display: inline-block;
   margin: 0 0 15px;
   right: 0;
 }
