@@ -1,12 +1,21 @@
-(function($) {
-    "use strict"; // Start of use strict
-
+$(document).ready(function () {
     //Masonry grid for porfolio section
-    $('.grid').masonry({
+    var $grid = $('.grid').masonry({
       itemSelector: '.grid-item',
       columnWidth: '.grid-sizer',
       percentPosition: true
+    })
+
+    // $grid.imagesLoaded(function () {
+    //     $grid.masonry();
+    // });
+    $grid.imagesLoaded().progress( function() {
+      $grid.masonry('layout');
     });
+});
+
+(function($) {
+    "use strict"; // Start of use strict
 
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('a.page-scroll').bind('click', function(event) {
