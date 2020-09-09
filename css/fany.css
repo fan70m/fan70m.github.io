@@ -6,25 +6,27 @@ body {
 
 body {
   /* font-family: 'Open Sans', Arial, sans-serif; */
-  /* below font faster because it's the os's natural font */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";   /* font faster because it's the os's natural font */
   line-height: 20px; /* a text line takes more space */
   margin: 0;
   text-align: center;
   font-size: 16px;
+  color: white;
 }
 
-.bg-primary {
-  background: linear-gradient(rgba(213, 111, 152, 0.75), rgba(131, 162, 211, 0.75)) fixed; /* fixed so that the gradient does not repeat when we scroll */
-}
-
-.bg-secondary {
-  background: rgb(250, 250, 250);
-  color: rgb(51, 51, 51);
+body.index {
+  background: linear-gradient(rgb(213, 111, 152), rgb(131, 162, 211)) fixed;
 }
 
 .cursive {
   font-family: 'Kaushan Script', cursive;
+}
+
+section {
+  background: rgb(250, 250, 250);
+  color: rgb(51, 51, 51);
+  margin: 0;
+  padding: 75px;
 }
 
 hr {
@@ -42,22 +44,31 @@ section hr {
   border-width: 3px;
 }
 
-img.circle {
+a {
+  color: rgb(131, 162, 211);
+}
+
+a:hover {
+  color: rgb(101, 142, 208);
+}
+
+header {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(rgb(213, 111, 152), rgb(131, 162, 211));
+  color: white;
+}
+
+/* this to make header transparent background for index page because the whole body is color already */
+header.index {
+  background: transparent;
+}
+
+header img.circle {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
-}
-
-header {
-  /* background: linear-gradient(rgba(213, 111, 152, 0.75), rgba(131, 162, 211, 0.75)) fixed; fixed so that the gradient does not repeat when we scroll */
-  position: relative;
-  width: 100%;
-  color: white;
-}
-
-.section-content {
-  padding: 75px;
 }
 
 header h1 {
@@ -69,7 +80,7 @@ header a {
 }
 
 header a:hover {
-  color: rgba(213, 111, 152, 0.75);
+  color: rgb(249, 236, 242);
 }
 
 header a .underlined{
@@ -78,10 +89,14 @@ header a .underlined{
 }
 
 header a:hover .underlined{
-  border-bottom: 1px solid rgba(213, 111, 152, 0.75);
+  border-bottom: 1px solid rgb(249, 236, 242);
 }
 
 div.long-text {
   max-width: 700px;
   margin: auto;
+}
+
+.section-content {
+  padding: 75px;
 }
