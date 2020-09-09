@@ -44,11 +44,6 @@ header .header-content {
   padding: 100px;
 }
 
-div.long-text {
-  max-width: 500px;
-  margin: auto;
-}
-
 header h1 {
   margin-bottom: 5px;
 }
@@ -62,4 +57,9 @@ header a {
 header a:hover {
   color: rgba(213, 111, 152, 0.75);
   border-bottom: 1px solid rgba(213, 111, 152, 0.75);
+}
+
+div.long-text {
+  max-width: 500px;
+  margin: auto;
 }
