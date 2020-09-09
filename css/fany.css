@@ -10,8 +10,12 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   line-height: 20px; /* a text line takes more space */
   margin: 0;
-  background: linear-gradient(rgba(213, 111, 152, 0.75), rgba(131, 162, 211, 0.75)) fixed; /* fixed so that the gradient does not repeat when we scroll */
   text-align: center;
+  font-size: 16px;
+}
+
+body.index {
+  background: linear-gradient(rgba(213, 111, 152, 0.75), rgba(131, 162, 211, 0.75)) fixed; /* fixed so that the gradient does not repeat when we scroll */
 }
 
 .cursive {
@@ -41,7 +45,7 @@ header {
 }
 
 header .header-content {
-  padding: 100px;
+  padding: 75px;
 }
 
 header h1 {
@@ -50,16 +54,22 @@ header h1 {
 
 header a {
   color: white;
-  text-decoration: none;
-  border-bottom: 1px solid white;
 }
 
 header a:hover {
   color: rgba(213, 111, 152, 0.75);
+}
+
+header a .underlined{
+  text-decoration: none;
+  border-bottom: 1px solid white;
+}
+
+header a:hover .underlined{
   border-bottom: 1px solid rgba(213, 111, 152, 0.75);
 }
 
 div.long-text {
-  max-width: 500px;
+  max-width: 700px;
   margin: auto;
 }
