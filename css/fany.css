@@ -1,30 +1,30 @@
-/*
-Color Palette
-#a4cac8 Pale Turquoise
-#679693 rgb(103, 150, 147) Dark Turquoise
-
-#d56f98 Dark Pink rgba(213, 111, 152, 0.75)
-#c76675 pink hover
-#edb7bc Pink
-#f2dadb Pale Pink
-#f2f2ea White ish
-#aecdc4 turquoise
- */
-
 html,
 body {
   height: 100%;
   width: 100%;
 }
+
 body {
-  font-family: 'Open Sans', Arial, sans-serif;
+  /* font-family: 'Open Sans', Arial, sans-serif; */
+  /* below font faster because it's the os's natural font */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 20px; /* a text line takes more space */
   margin: 0;
+  background: linear-gradient(rgba(213, 111, 152, 0.75), rgba(131, 162, 211, 0.75)) fixed; /* fixed so that the gradient does not repeat when we scroll */
+  text-align: center;
 }
+
+.cursive {
+  font-family: 'Kaushan Script', cursive;
+}
+
 hr {
   border: 0;
   border-top: 1px solid #d56f98;
   border-width: 3px;
   max-width: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 img.circle {
@@ -37,12 +37,29 @@ img.circle {
 header {
   position: relative;
   width: 100%;
-  min-height: auto;
-  background-image: linear-gradient(rgba(213, 111, 152, 0.75), rgba(131, 162, 211, 0.75));
-  text-align: center;
   color: white;
 }
 
 header .header-content {
   padding: 100px;
+}
+
+div.long-text {
+  max-width: 500px;
+  margin: auto;
+}
+
+header h1 {
+  margin-bottom: 5px;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid white;
+}
+
+header a:hover {
+  color: rgba(213, 111, 152, 0.75);
+  border-bottom: 1px solid rgba(213, 111, 152, 0.75);
 }
