@@ -1,47 +1,47 @@
-$(document).ready(function () {
-    //Masonry grid for porfolio section
-    var $grid = $('.grid').masonry({
-      itemSelector: '.grid-item',
-      columnWidth: '.grid-sizer',
-      percentPosition: true
-    })
+// $(document).ready(function () {
+//     //Masonry grid for porfolio section
+//     $('.grid').masonry({
+//       itemSelector: '.grid-item',
+//       percentPosition: true
+//     })
+//   });
 
-    // $grid.imagesLoaded(function () {
-    //     $grid.masonry();
-    // });
-    $grid.imagesLoaded().progress( function() {
-      $grid.masonry('layout');
-    });
-});
+//     // $grid.imagesLoaded(function () {
+//     //     $grid.masonry();
+//     // });
+//     $grid.imagesLoaded().progress( function() {
+//       $grid.masonry('layout');
+//     });
+// });
 
-(function($) {
-    "use strict"; // Start of use strict
+// (function($) {
+//     "use strict"; // Start of use strict
 
-    // jQuery for page scrolling feature - requires jQuery Easing plugin
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: ($($anchor.attr('href')).offset().top - 50)
-        }, 1250);
-        event.preventDefault();
-    });
+//     // jQuery for page scrolling feature - requires jQuery Easing plugin
+//     $('a.page-scroll').bind('click', function(event) {
+//         var $anchor = $(this);
+//         $('html, body').stop().animate({
+//             scrollTop: ($($anchor.attr('href')).offset().top - 50)
+//         }, 1250);
+//         event.preventDefault();
+//     });
 
-    // Highlight the top nav as scrolling occurs
-    $('body').scrollspy({
-        target: '.navbar-fixed-top',
-        offset: 51
-    });
+//     // Highlight the top nav as scrolling occurs
+//     $('body').scrollspy({
+//         target: '.navbar-fixed-top',
+//         offset: 51
+//     });
 
-    // Closes the Responsive Menu on Menu Item Click
-    $('.navbar-collapse ul li a').click(function() {
-        $('.navbar-toggle:visible').click();
-    });
+//     // Closes the Responsive Menu on Menu Item Click
+//     $('.navbar-collapse ul li a').click(function() {
+//         $('.navbar-toggle:visible').click();
+//     });
 
-    // Offset for Main Navigation
-    $('#mainNav').affix({
-        offset: {
-            top: 100
-        }
-    })
+//     // Offset for Main Navigation
+//     $('#mainNav').affix({
+//         offset: {
+//             top: 100
+//         }
+//     })
 
-})(jQuery); // End of use strict
+// })(jQuery); // End of use strict

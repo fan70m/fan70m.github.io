@@ -104,3 +104,15 @@ div.long-text {
 .text-left {
   text-align: left;
 }
+
+.grid-sizer,
+.grid-item { width: 33%; }
+
+.grid-item {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.portfolio-img{
+  max-width: 100%;
+}
