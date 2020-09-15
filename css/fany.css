@@ -105,14 +105,51 @@ div.long-text {
   text-align: left;
 }
 
-.grid-sizer,
-.grid-item { width: 33%; }
-
-.grid-item {
-  width: 200px;
-  margin-bottom: 10px;
+.portfolio-img{
+  max-width: 100%; /* so that image in grid doesn't exceed grid */
 }
 
-.portfolio-img{
-  max-width: 100%;
+/* .random {
+  max-width: 900px;
+  margin: auto;
+} */
+
+/* .grid-sizer,
+.grid-item {
+  width: 33%; /* so that there is 3 columns
+} */
+.grid {
+  margin: 0 auto;
+}
+
+.grid-item {
+  /* for masonry grid to look pretty */
+  width: 250px;
+  margin-bottom: 20px;
+  /* for material design style cards */
+  background: white;
+  border-radius: 2px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.grid-text {
+  margin: 20px;
+}
+
+.grid-link {
+  text-transform: uppercase;
+  margin: 1em;
+}
+
+div.chip {
+  display: inline-block;
+  border-radius: 32px;
+  padding: 5px 12px;
+  background-color: #e0e0e0;
+  font-size: smaller;
+  margin: 3px;
+}
+
+p.chip {
+  margin: 0;
 }
