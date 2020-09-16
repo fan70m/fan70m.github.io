@@ -105,19 +105,11 @@ div.long-text {
   text-align: left;
 }
 
+/* start of portfolio grid */
 .portfolio-img{
   max-width: 100%; /* so that image in grid doesn't exceed grid */
 }
 
-/* .random {
-  max-width: 900px;
-  margin: auto;
-} */
-
-/* .grid-sizer,
-.grid-item {
-  width: 33%; /* so that there is 3 columns
-} */
 .grid {
   margin: 0 auto;
 }
@@ -153,3 +145,5 @@ div.chip {
 p.chip {
   margin: 0;
 }
+
+/* end of portfolio grid */
