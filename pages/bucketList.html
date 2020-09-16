@@ -1,239 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117566690-1"></script>
-  <script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
 
-	  gtag('config', 'UA-117566690-1');
-	</script>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117566690-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-117566690-1');
+  </script>
+  <!-- end google analytics. Must be at start of head -->
+
+  <!-- allow you to write chinese character -->
   <meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- choose what version of Internet Explorer the page should be rendered as -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- to make sure font-size stays the same on mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Hi! I am Fany and welcome to my personal page. I'm a software developer currently studying Computer Science at University of Waterloo. I enjoy web dev, solving problems, and fangirling over things I like! ">
+  <!-- when google the website can see this description-->
+  <meta name="description" content="Hi! I am Fany and welcome to my personal page. I'm a software developer currently studying Computer Science at University of Waterloo. I enjoy building things, solving problems, and fangirling over things I like!">
+
+  <title>Fany Chen | Software Developer</title>
+  <link rel="icon" href="../img/f.ico">
+  <!-- custom stylesheet -->
+  <link href="../css/fany.css" rel="stylesheet">
+  <!-- for cursive text -->
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+  <!-- for icons -->
+  <script src="https://kit.fontawesome.com/f9b42d1df0.js" crossorigin="anonymous"></script>
 
   <!--Describes appearance of the website when shared on Facebook-->
   <meta property="og:title" content="Fany Chen | Software Developer"/>
   <meta property="og:url" content="http://fanychen.com"/>
   <meta property="og:type" content="website"/>
-  <meta property="og:description" content="Hi! I am Fany and welcome to my personal page. I'm a software developer currently studying Computer Science at University of Waterloo. I enjoy web dev, solving problems, and fangirling over things I like!"/>
+  <meta property="og:description" content="Hi! I am Fany and welcome to my bucket list!"/>
   <meta property="og:image" content="http://fanychen.com/img/banff.jpg"/>
   <meta property="og:image:alt" content="trip at banff"/>
 
-  <title>Fany Chen | Software Developer</title>
-  <!-- Bootstrap stylesheet -->
-  <link href="../css/bootstrap.min.css" rel="stylesheet">
-  <!--custom stylesheet -->
-  <link href="../css/fany.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans" rel="stylesheet">
-  <link rel="icon" href="../img/f.ico">
-  <script src="https://use.fontawesome.com/7c18d05753.js"></script>
 </head>
-<body id="page-top">
-	<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-			<div class="container-fluid">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-									Menu <i class="fa fa-bars"></i>
-							</button>
-							<a class="navbar-brand page-scroll" href="../index.html">Fany Chen</a>
-					</div>
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-							<ul class="nav navbar-nav navbar-right">
-									<li>
-											<a class="page-scroll" href="../index.html#about">About</a>
-									</li>
-									<li>
-											<a class="page-scroll" href="../index.html#resume">Résumé</a>
-									</li>
-									<li>
-											<a class="page-scroll" href="../index.html#portfolio">Portfolio</a>
-									</li>
-									<li>
-											<a class="page-scroll" href="#bucketList">Bucket List</a>
-									</li>
-									<li>
-											<a class="page-scroll" href="#contact">Contact</a>
-									</li>
-							</ul>
-					</div>
-					<!-- /.navbar-collapse -->
-			</div>
-			<!-- /.container-fluid -->
-	</nav>
 
-	<section  class="bg-primary" id="header">
-		<div class="container">
-				<div class="row">
-						<div class="col-lg-8 col-lg-offset-2 text-center">
-								<h1 class="section-heading">My Impossible List</h1>
-								<hr class="light">
-								<p class="text-faded" style="text-align: left;">
-								I want to do so much in my life, small things like eating ice cream + meatballs at Ikea or big things like saving the world (by planting trees).
-								To actively work towards my goals and hold myself accountable for my actions, I am making my own impossible list!
-								(Inspired by <a class="text-faded" href="https://collegeinfogeek.com/about/meet-the-author/my-impossible-list/" class="portfolio-link">Thomas from CollegeInfoGeek</a>)
-								This is a personal list of things that I want to do that is constantly evolving and updated. Wish me luck!
-								</p>
-								<p class="text-faded">Current focus: Travel, learn, have fun</p>
-						</div>
-				</div>
-		</div>
+<body>
+  <header class="bg-primary">
+    <div class="section-content">
+      <img src="../img/fan-profile-photo.jpg" alt="image of Fany" class="circle">
+
+      <h1 class="cursive">Fany Chen</h1>
+      <p>Software Developer - Professional Fangirl</p>
+      <p>
+        <a href="../index.html">About</a> • <a href="https://medium.com/@fan70m">Blog</a> • <a>Bucket List</a> • <a href="./projects.html">Projects</a>
+      </p>
+    </div>
+  </header>
+
+	<section class="bg-secondary">
+    <div class="text-left long-text">
+      <div>
+        <h1 class="cursive">My Impossible List</h1>
+        <p>
+          I want to do so much in my life, small things like eating ice cream + meatballs at Ikea or big things like saving the world (by planting trees).
+          To actively work towards my goals and hold myself accountable for my actions, I am making my own impossible list!
+          (Inspired by <a href="https://collegeinfogeek.com/about/meet-the-author/my-impossible-list/" class="portfolio-link">Thomas from CollegeInfoGeek</a>)
+          This is a personal list of things that I want to do that is constantly evolving and updated. Wish me luck!
+        </p>
+        <p>Current focus: Work, learn, have fun</p>
+      </div>
+      <hr class="bg-secondary">
+      <div>
+        <h3>Recently Completed Goals</h3>
+          <ul>
+            <li>Many musicals!</li>
+            <li>iOS</li>
+            <li>Vancouver!</li>
+            <li>Donated money to plant trees</li>
+          </ul>
+
+        <h3>TRAVEL</h3>
+          <ul>
+            <li><del>London, GB</del></li>
+            <li>Tokyo, Japan (cherry blossom!) *Aside, I saw cherry blossom in Toronto 2018!!!</li>
+            <li>Seoul, Korea</li>
+            <li><del>Vancouver, CA</del></li>
+            <li>Beijing, China</li>
+            <li>Chonqing, China</li>
+            <li><del>Taipei, Taiwan</del></li>
+            <li><del>Banff, CA</del></li>
+            <li><del>Singapore, Singapore</del></li>
+            <li>Disney World!</li>
+            <li>Sandiego Comic Con</li>
+            <li>Great Wall of China</li>
+            <li>Pyramids</li>
+            <li>Quebec ice hotel</li>
+            <li>Harbin ice festival</li>
+            <li>Costa Rica</li>
+            <li>Matchu Pitchu, Perou</li>
+            <li>Iceland</li>
+          </ul>
+        <h3>TECH</h3>
+          <ul>
+            <li><del>Attend a Hackathon</del> (theLadyHacks at York University 2017)</li>
+            <li><del>Win a Hackathon</del> (DeltaHacks at McMaster -> PresentR, an online real-time collaborative drawing board 2018)</li>
+            <li><del>Make an Android app</del></li>
+            <li><del>Make a iOS app</del>(lol I'm an iOS developer rn)</li>
+            <li><del>Make a progessive web app</del> (I made the most stupid PWA ever: a mirror app 😂)</li>
+            <li>Publish an app on the app store</li>
+            <li>Make a dapp (decentralized app)</li>
+            <li><del>Make a Alexa skill</del></li>
+            <li>Make a Google Home skill</li>
+            <li><del>Become fluent in Python</del> and stay fluent (still need to google how to define a function everytime 😭)</li>
+            <li><del>Attend a tech conference</del> (Entreprise World 2017 - OpenText)</li>
+            <li>Attend Google IO</li>
+            <li>Attend F8</li>
+          </ul>
+        <h3>SPORT/FITNESS</h3>
+          <ul>
+            <li>Half Marathon</li>
+            <li>Bungee</li>
+            <li>Skydiving</li>
+            <li>Scuba diving</li>
+            <li><del>100 squats in a single set</del> (Couldn't walk for 3 days after, but 100% worth!!!)</li>
+            <li>100 pushups in a single set</li>
+            <li><del>100 situps in a single set</del></li>
+            <li>1 pull up</li>
+            <li>5 pull ups</li>
+            <li>run everyday or every 2 days for a month</li>
+            <li><del>learn how to ski</del></li>
+            <li>learn how to skate really well</li>
+            <li>learn archery</li>
+            <li>Hike up a mountain and see the sunrise from there</li>
+          </ul>
+        <h3>PERSONAL DEVELOPMENT</h3>
+          <ul>
+            <li><del>Learn korean</del> and be fluent enough to watch kdrama without subtitles</li>
+            <li>Be able to sing one full song well from beginning to end</li>
+            <li>Learn one piano song and remember it forever</li>
+            <li>Learn one guitar song and remember it forever</li>
+            <li>Learn one ukulele song and remember it forever</li>
+            <li>Present in front of 100+ people</li>
+          </ul>
+        <h3>ENTERTAINMENT</h3>
+          <ul>
+            <li><del>Watch a musical</del> (Come from Away - Toronto!!! Best musical I've aver seen!!! An the only on I've seen)</li>
+            <li><del>Watch Wicked</del>(With ❤️, it was amaaazing)</li>
+            <li>Watch les Miserable</li>
+            <li>Watch Sound of Music</li>
+            <li><del>Watch Hamilton</del></li>
+            <li>Watch the Lion King</li>
+            <li>Watch Singing in the Rain</li>
+            <li>Watch ballet</li>
+            <li><del>Watch opera</del> (Turandot - Montreal)</li>
+            <li><del>Watch concert</del> (Justin Timberlake - Toronto)</li>
+          </ul>
+        <h3>RANDOM</h3>
+          <ul>
+            <li><del>Eat ice cream + spaghetti at Ikea</del></li>
+            <li><del>Pull all nighter</del> (Winter 2017 - Waterloo, we played werewolf all night haha)</li>
+            <li>Take care of my plant and not kill it</li>
+            <li>Plant 100 trees 🌲🌲🌲(12 done but 1 dead)</li>
+            <li>Plant 1000 trees 🌲🌲🌲</li>
+            <li>Plant 10,000 trees 🌲🌲🌲</li>
+            <li><del>Make a full diner for my familly</del></li>
+            <li>Buy expensive bag for mom</li>
+
+            <li>Know the end of One Piece</li>
+            <li>Know the end of Detective Conan</li>
+
+            <li>Meet a kdrama star by concidence</li>
+            <li>Meet a kpop star by concidence</li>
+            <li>Meet a Chinese star by concidence</li>
+            <li><del>Attend concert</del> (Justin Timberlake 2018)</li>
+            <li>Jay Chou concert</li>
+            <li>王力宏 concert</li>
+            <li>周深 concert</li>
+            <li><del>Kpop concert</del>(Hyukoh)</li>
+            <li>Take pic with actor/actress</li>
+            <li>Take pic with Andy Murray</li>
+
+            <li><del>Regarder les feux d'artifices sur le pont au dessus de LaRonde</del>(Summer 2016)</li>
+            <li>Voir le levee du soleil sur le Mont-Royal</li>
+            <li>Voir un spectacle de Cirque du Soleil au Vieux Port de Montreal</li>
+            <li><del>Inviter ma famille a aller voir un spectacle de Cirque du Soleil avec mon argent</del></li>
+            <li>Inviter ma famille en vacances avec mon propre argent</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <h3 class="cursive">Contact Me</h3>
+      <div>
+        <a href="mailto:fanychen@live.ca"><i class="fas fa-2x fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/fan70m"><i class="fab fa-2x  fa-linkedin"></i></a>
+        <a href="https://github.com/fan70m"><i class="fab fa-2x fa-github"></i></a>
+      </div>
 	</section>
-
-	<section id="bucketList">
-			<div class="container">
-					<div class="row">
-							<div class="col-lg-8 col-lg-offset-2 text-left">
-
-									<h3>Recently Completed Goals</h3>
-										<ul>
-											<li>Many musicals!</li>
-											<li>iOS</li>
-											<li>Vancouver soon!</li>
-											<li>Cirque du Soleil pour ma famille</li>
-										</ul>
-
-									<h3>New Year Resolutions</h3>
-										<ul>
-											<li>1 pull up (UPDATE: working on it)</li>
-											<li>Run often (UPDATE: lol I forgot about this goal)</li>
-											<li>Document my trips (UPDATE: did it!)</li>
-										</ul>
-
-									<h3>TRAVEL</h3>
-										<ul>
-											<li><del>London, GB</del></li>
-											<li>Tokyo, Japan (cherry blossom!) *Aside, I saw cherry blossom in Toronto 2018!!!</li>
-											<li>Seoul, Korea</li>
-											<li>Vancouver, CA</li>
-											<li>Beijing, China</li>
-											<li>Chonqing, China</li>
-											<li><del>Taipei, Taiwan</del></li>
-											<li><del>Banff, CA</del></li>
-											<li><del>Singapore, Singapore</del></li>
-											<li>Disney World!</li>
-											<li>Sandiego Comic Con</li>
-											<li>Great Wall of China</li>
-											<li>Pyramids</li>
-											<li>Quebec ice hotel</li>
-											<li>Harbin ice festival</li>
-											<li>Costa Rica</li>
-										</ul>
-									<h3>TECH</h3>
-										<ul>
-											<li><del>Attend a Hackathon</del> (theLadyHacks at York University 2017)</li>
-											<li><del>Win a Hackathon</del> (DeltaHacks at McMaster -> PresentR, an online real-time collaborative drawing board 2018)</li>
-											<li><del>Make an Android app</del></li>
-											<li><del>Make a iOS app</del>(lol I'm an iOS developer rn)</li>
-											<li><del>Make a progessive web app</del> (I made the most stupid PWA ever: a mirror app 😂)</li>
-											<li>Publish an app on the app store</li>
-											<li>Make a dapp (decentralized app)</li>
-											<li><del>Make a Alexa skill</del></li>
-											<li>Make a Google Home skill</li>
-											<li><del>Become fluent in Python</del> and stay fluent (still need to google how to define a function everytime 😭)</li>
-											<li><del>Attend a tech conference</del> (Entreprise World 2017 - OpenText)</li>
-											<li>Attend Google IO</li>
-											<li>Attend F8</li>
-										</ul>
-									<h3>SPORT/FITNESS</h3>
-										<ul>
-											<li>Marathon</li>
-											<li>Bungee</li>
-											<li>Skydiving</li>
-											<li><del>100 squats in a single set</del> (Couldn't walk for 3 days after, but 100% worth!!!)</li>
-											<li>100 pushups in a single set</li>
-											<li><del>100 situps in a single set</del></li>
-											<li>1 pull up</li>
-											<li>5 pull ups</li>
-											<li>run everyday or every 2 days for a month</li>
-											<li><del>learn how to ski</del></li>
-											<li>learn how to skate really well</li>
-											<li>learn archery</li>
-										</ul>
-									<h3>PERSONAL DEVELOPMENT</h3>
-										<ul>
-											<li><del>Learn korean</del> and be fluent enough to watch kdrama without subtitles</li>
-											<li>Be able to sing one full song well from beginning to end</li>
-											<li>Learn one piano song and remember it forever</li>
-											<li>Learn one guitar song and remember it forever</li>
-											<li>Learn one ukulele song and remember it forever</li>
-											<li>Present in front of 100+ people</li>
-										</ul>
-									<h3>ENTERTAINMENT</h3>
-										<ul>
-											<li><del>Watch a musical</del> (Come from Away - Toronto!!! Best musical I've aver seen!!! An the only on I've seen)</li>
-											<li><del>Watch Wicked</del>(With ❤️, it was amaaazing)</li>
-											<li>Watch les Miserable</li>
-											<li>Watch Sound of Music</li>
-											<li><del>Watch Hamilton</del></li>
-											<li>Watch the Lion King</li>
-											<li>Watch Singing in the Rain</li>
-											<li>Watch ballet</li>
-											<li><del>Watch opera</del> (Turandot - Montreal)</li>
-											<li><del>Watch concert</del> (Justin Timberlake - Toronto)</li>
-										</ul>
-									<h3>RANDOM</h3>
-										<ul>
-											<li><del>Eat ice cream + spaghetti at Ikea</del></li>
-											<li><del>Pull all nighter</del> (Winter 2017 - Waterloo, we played werewolf all night haha)</li>
-											<li>Take care of my plant and not kill it</li>
-											<li>Plant 100 trees 🌲🌲🌲(2 done)</li>
-											<li>Plant 1000 trees 🌲🌲🌲</li>
-											<li>Plant 10,000 trees 🌲🌲🌲</li>
-											<li>Make a full diner for my familly</li>
-											<li>Buy expensive bag for mom</li>
-
-											<li>Meet a kdrama star</li>
-											<li>Meet a kpop star</li>
-											<li>Meet a Chinese star</li>
-											<li><del>Attend concert</del> (Justin Timberlake 2018)</li>
-											<li>Jay Chou concert</li>
-											<li>王力宏 concert</li>
-											<li><del>Kpop concert</del>(Hyukoh)</li>
-											<li>Take pic with actor/actress</li>
-											<li>Take pic with Andy Murray</li>
-
-											<li><del>Regarder les feux d'artifices sur le pont au dessus de LaRonde</del>(Summer 2016)</li>
-											<li>Voir le levee du soleil sur le Mont-Royal</li>
-											<li>Voir un spectacle de Cirque du Soleil au Vieux Port de Montreal</li>
-											<li><del>Inviter ma famille a aller voir un spectacle de Cirque du Soleil avec mon argent</del></li>
-											<li>Inviter ma famille en vacances avec mon propre argent</li>
-										</ul>
-							</div>
-					</div>
-			</div>
-	</section>
-
-	<section class="bg-primary" id="contact">
-			<div class="container">
-					<div class="col-lg-8 col-lg-offset-2 text-center">
-							<h1 class="section-heading">Contact me</h1>
-							<hr class="light">
-							<p class="text-faded">Do not hesitate to get in touch with me!</p>
-
-							<p>
-									<a class="text-faded" href="mailto:fanychen@live.ca">fanychen@live.ca<i class="fa fa-envelope-o"></i></a>
-							</p>
-					</div>
-					<div class="col-lg-8 col-lg-offset-2 text-center">
-							<a class="text-faded" href="mailto:fanychen@live.ca"><i class="fa fa-4x fa-envelope"></i></a>
-							<a class="text-faded" href="https://www.linkedin.com/in/fan70m"><i class="fa fa-4x fa-linkedin-square"></i></a>
-							<a class="text-faded" href="https://github.com/fan70m"><i class="fa fa-4x fa-github"></i></a>
-					</div>
-			</div>
-	</section>
-	<script src="../jquery/jquery.min.js"></script>
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="../js/bootstrap.min.js"></script>
-	<!-- <script src="https://masonry.desandro.com/masonry.pkgd.js"></script> -->
-	<script src="../js/masonry.pkgd.min.js"></script>
-	<script src="../js/fany.js"></script>
 </body>
 </html>
